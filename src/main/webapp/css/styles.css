@@ -1,0 +1,228 @@
+/* 重置与基础设置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  
+
+
+}
+
+
+/* 外层容器：使用 flex 布局，确保页脚在内容不足时贴底 */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 页眉区域：半透明蓝色背景 */
+.header {
+  background-color: rgba(0, 102, 204, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.2em;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* 导航链接：文字不带下划线 */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1em;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #e2e2e2;
+}
+
+/* 主体内容区域 */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em 1em;
+}
+
+/* 容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* 卡片盒子：圆角及阴影效果 */
+.box {
+  max-width: 600px;
+  margin: 2em auto;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+}
+
+/* .box 内标题 */
+.box h2 {
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* 表单控件：圆角、增大字号 */
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"],
+.box select {
+  width: 100%;
+  font-size: 1.1em;
+  padding: 0.6em;
+  margin-bottom: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* 登录表单容器 */
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* 表单组 */
+.form-group {
+  margin-bottom: 1.2em;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #4CAF50;
+}
+
+/* 按钮容器 */
+.btn-container {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* 通用按钮：蓝色背景，圆角 */
+.btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.4em 1em;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #45A049;
+}
+
+/* 删除按钮 */
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 0.4em 1em;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* 错误信息提示 */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* 时间显示 */
+#timeDisplay {
+  text-align: center;
+  margin-top: 1em;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Banner 容器及图片 */
+.banner-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.banner-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* 其他链接：文字不带下划线 */
+.links {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.links a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* 页脚：半透明蓝色背景 */
+.footer {
+  background-color: rgba(0, 102, 204, 0.8);
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;
+  color: #fff;
+}
